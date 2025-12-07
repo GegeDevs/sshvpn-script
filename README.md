@@ -17,7 +17,7 @@ Oleh karena batasan ini, saya membuka bagi siapapun yang ingin menyumbangkan seb
 
 Kemudian lakukan curl 
 ```bash
-curl --location --request POST 'zones.gegevps.com/zone' \
+curl --location --request POST 'zones.gegedevs.my.id/zone' \
 --header 'domain: <DOMAINMU>'
 ```
 Akan diperoleh output kurang lebih seperti ini
@@ -40,7 +40,7 @@ Akan diperoleh output kurang lebih seperti ini
 Pantau aktivasi domain disini
 
 ```url
-https://zones.gegevps.com/domain/<DOMAINMU>
+https://zones.gegedevs.my.id/domain/<DOMAINMU>
 ```
 
 Jika `status` bernilai `active` seperti pada sampel dibawah ini maka domain telah berhasil terintegrasi dengan autoscript
@@ -59,7 +59,7 @@ Jika `status` bernilai `active` seperti pada sampel dibawah ini maka domain tela
 
 untuk melihat daftar domain yang terintegrasi bisa kunjungi url
 ```url
-https://zones.gegevps.com/domains
+https://zones.gegedevs.my.id/domains
 ```
 
 ### [SOLUSI 2] Gunakan API Key dari akun Cloudflare Pribadi
@@ -71,7 +71,7 @@ export DEBIAN_FRONTEND=noninteractive
 source /etc/os-release
 apt-get update && \
 apt-get --reinstall --fix-missing install -y whois bzip2 gzip coreutils wget screen nscd && \
-wget --inet4-only --no-check-certificate -O setup.sh "https://script.gegevps.com/deb${VERSION_ID}/setup.sh" && \
+wget --inet4-only --no-check-certificate -O setup.sh "https://script.gegedevs.my.id/deb${VERSION_ID}/setup.sh" && \
 chmod +x setup.sh && \
 screen -S setup ./setup.sh "CFAPIKEY"
 
@@ -228,7 +228,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 	source /etc/os-release
 	apt-get update && \
 	apt-get --reinstall --fix-missing install -y whois bzip2 gzip coreutils wget screen nscd && \
-	wget --inet4-only --no-check-certificate -O setup.sh "https://script.gegevps.com/deb${VERSION_ID}/setup.sh" && \
+	wget --inet4-only --no-check-certificate -O setup.sh "https://script.gegedevs.my.id/deb${VERSION_ID}/setup.sh" && \
 	chmod +x setup.sh && \
 	screen -S setup ./setup.sh
 
